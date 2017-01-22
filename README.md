@@ -1,1 +1,2 @@
-# My project's README
+# Implementation of basic algo for learning purposes
+
