@@ -1,2 +1,1 @@
-# Implementation of basic algo for learning purposes
-
+# Implementation of basic ML algo for educational purposes
