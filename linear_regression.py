@@ -34,11 +34,11 @@ class LinearRegression(object):
 	def __init__(self):
 		# theta : model parameter of size 2
 		# J : cost history
-		# self.theta = np.array([0, 0])
-		self.theta = np.random.randn(2)
+		self.theta = np.array([0, 0])
+		# self.theta = np.random.randn(2)
 		self.J = []
 
-	def fit(self, X, y, alpha = 0.1, n_iter = 3):
+	def fit(self, X, y, alpha = 0.01, n_iter = 1000):
 		"""
 		Fit linear model.
 
@@ -56,12 +56,12 @@ class LinearRegression(object):
 		assert(len(X)==len(y)),"dimensions don't match"
 		for i in range(n_iter):
 			pred = self.predict(X)
-			print "pred: ", pred
+			# print "pred & y ", pred[:5], y[:5]
 			# gradient descent
 			self.theta -= float(alpha)/len(y) * np.dot((pred - y), X)
-			print "theta: ", self.theta
+			# print "theta: ", self.theta
 			self.J.append(least_square_error(pred,y))
-			print "J: ", self.J
+			# print "J: ", self.J
 
 	def predict(self, X):
 		"""
@@ -93,14 +93,12 @@ class LinearRegression(object):
 
 def main():
 	data = pd.read_csv('db/ex1data1.txt', names=['population', 'profit'])
-	X = data.population
-	y = data.profit
+	X = data.population.values
+	y = data.profit.values
 	model = LinearRegression()
-	pred1 = model.predict(X)
 	model.fit(X,y)
-	pred2 = model.predict(X)
+	pred = model.predict(X)
 
-	embed()
 
 
 
