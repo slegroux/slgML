@@ -10,6 +10,7 @@ Implementation of classical machine learning from scratch for educational purpos
 
 ## Dependencies
 numpy, scipy, matplotlib
-## Author
-**Sylvain Le Groux** <slegroux@ccrma.stanford.edu>
-
+## License
+[GPL](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
+## Authors
+(c) 2020 Sylvain Le Groux <slegroux@ccrma.stanford.edu>
