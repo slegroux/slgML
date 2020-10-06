@@ -13,4 +13,4 @@ numpy, scipy, matplotlib
 ## License
 [GPL](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
 ## Authors
-(c) 2020 Sylvain Le Groux <slegroux@ccrma.stanford.edu>
+(c) 2020 **Sylvain Le Groux** <slegroux@ccrma.stanford.edu>
